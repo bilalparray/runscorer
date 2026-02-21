@@ -6,7 +6,7 @@
 	<string>app-store</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.canopas.khelo</key>
+		<key>com.qayham.runscorer</key>
 		<string>74a6f92b-75d4-4c72-b610-435ae643721f</string>
 	</dict>
 	<key>signingCertificate</key>

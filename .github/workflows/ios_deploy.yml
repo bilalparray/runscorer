@@ -40,7 +40,7 @@ jobs:
         GOOGLE_SERVICE_INFO_PLIST_BASE64: ${{ secrets.GOOGLE_SERVICE_INFO_PLIST_BASE64 }}
         FIREBASE_JSON_BASE64: ${{ secrets.FIREBASE_JSON_BASE64 }}
       run: |
-        cd khelo
+        cd runscorer
         echo $FIREBASE_OPTIONS_BASE64 | base64 --decode > lib/firebase_options.dart  
         echo $GOOGLE_SERVICE_INFO_PLIST_BASE64 | base64 --decode > ios/Runner/GoogleService-Info.plist
         echo $FIREBASE_JSON_BASE64 | base64 --decode > firebase.json
@@ -49,7 +49,7 @@ jobs:
       run: |
         cd data && flutter clean && flutter pub get
         cd ../style && flutter clean && flutter pub get
-        cd ../khelo && flutter clean && flutter pub get
+        cd ../runscorer && flutter clean && flutter pub get
         cd ios && pod install --repo-update && flutter clean && flutter pub get
         cd ..
 
@@ -80,7 +80,7 @@ jobs:
 
     - name: Build ipa for distribution
       run: |
-        cd khelo
+        cd runscorer
         file='VERSION'
         fileData=`cat $file`
         IFS='.'

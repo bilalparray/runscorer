@@ -39,7 +39,7 @@ jobs:
           GOOGLE_SERVICES_JSON_BASE64: ${{ secrets.GOOGLE_SERVICES_JSON_BASE64 }}
 
         run: |
-          cd khelo
+          cd runscorer
           echo $FIREBASE_OPTIONS_BASE64 | base64 -di > lib/firebase_options.dart
           echo $GOOGLE_SERVICES_JSON_BASE64 | base64 -di > android/app/google-services.json
 
@@ -47,7 +47,7 @@ jobs:
         run: |
           cd data && flutter clean && flutter pub get
           cd ../style && flutter clean && flutter pub get
-          cd ../khelo && flutter clean && flutter pub get
+          cd ../runscorer && flutter clean && flutter pub get
           cd ..
 
       - name: Generate Build
@@ -60,7 +60,7 @@ jobs:
         run: |
           echo  $APKSIGN_KEYSTORE_BASE64 | base64 -di > release.keystore
           export APKSIGN_KEYSTORE=`pwd`/release.keystore
-          cd khelo
+          cd runscorer
           file='VERSION'
           fileData=`cat $file`
           IFS='.'
@@ -72,11 +72,11 @@ jobs:
           flutter build apk --release --build-number=$buildNumber --build-name=$buildName
 
           cd ..
-          mv khelo/build/app/outputs/apk/release/Khelo*.apk .
+          mv runscorer/build/app/outputs/apk/release/RunScorer*.apk .
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Khelo APK
-          path: Khelo*.apk
+          name: Run Scorer APK
+          path: RunScorer*.apk
           retention-days: 2

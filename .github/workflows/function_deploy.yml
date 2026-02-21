@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install Dependencies
-        working-directory: khelo/functions
+        working-directory: runscorer/functions
         run: |
           npm ci
 
@@ -43,18 +43,18 @@ jobs:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
           FIREBASE_JSON_BASE64: ${{ secrets.FIREBASE_JSON_BASE64 }}
         run: |
-          cd khelo
+          cd runscorer
           echo $GOOGLE_APPLICATION_CREDENTIALS | base64 --decode > functions/google-application-credentials.json
           echo $FIREBASE_JSON_BASE64 | base64 --decode > firebase.json
 
       - name: Deploy Firebase functions
         run: |
-          cd khelo
+          cd runscorer
           export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/functions/google-application-credentials.json
           firebase deploy --only functions --debug
 
       - name: Remove credentials file
         if: success() || failure()
         run: |
-          cd khelo
+          cd runscorer
           rm functions/google-application-credentials.json

@@ -1,4 +1,4 @@
-package com.canopas.khelo
+package com.qayham.runscorer
 
 import io.flutter.embedding.android.FlutterActivity
 
