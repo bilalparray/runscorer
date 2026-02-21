@@ -8,7 +8,7 @@
 ## Overview
 Welcome to Khelo, an open-source multi-platform app designed to cater to all your cricket needs, whether you're a cricket enthusiast, a team manager, or a player. With a wide array of features, our app simplifies the management of cricket teams, players, matches, and performance records. It's like having a personal assistant for your team!
 
-Khelo is built using Flutter and Dart, leveraging Firestore for database management and Firebase for authentication. This project employs Riverpod as its state management solution, adhering to a clean architecture approach organized into multiple modules.
+Khelo is built using Flutter and Dart, leveraging Firestore for database management and Firebase for authentication. This project employs Riverpod as its state management solution, adhering to a clean architecture approach. The repository is a monorepo: the main app is in `runscorer/`, with shared `style` and `data` packages at the root level.
 
 ## Download App
 
@@ -68,6 +68,16 @@ Khelo is built using Flutter and Dart, leveraging Firestore for database managem
 
 > **Note**: Khelo is currently in active development 🚧, with plans to introduce additional features soon!
 
+## Getting Started 🏃
+
+This repo is a monorepo. The Flutter app lives in the `runscorer` directory. Run all Flutter commands from there:
+
+```bash
+cd runscorer
+flutter pub get
+flutter run
+```
+
 ## Requirements ✅
 
 <details>
@@ -78,8 +88,8 @@ Khelo is built using Flutter and Dart, leveraging Firestore for database managem
 
 **Software:**
 
-- **Flutter**: [Download Flutter](https://flutter.dev/docs/get-started/install) (version: 3.24 or higher)
-- **Dart**: Installed as part of the Flutter SDK (version: 3.5 or higher)
+- **Flutter**: [Download Flutter](https://flutter.dev/docs/get-started/install) (version 3.24 or higher, SDK >=3.2.3)
+- **Dart**: Installed as part of the Flutter SDK (version 3.2.3 or higher)
 - **Firebase**: A free Google service offering various backend functionalities. (See [Firebase documentation](https://firebase.google.com/docs) for setup instructions)
 
 **Additional Requirements:**
@@ -109,7 +119,6 @@ Khelo leverages modern Flutter development technologies, adhering to industry be
 - **MVVM Architecture**: A design pattern that separates the user interface from business logic, enhancing testability.
 - **Flutter**: A UI toolkit for building natively compiled applications.
 - **Dart**: The programming language used to write Flutter apps.
-- **Http & Dio**: Libraries for making network requests.
 - **GoRouter**: A declarative routing package for Flutter.
 - **RiverPod**: A state management solution that is simple and powerful.
 - **Firebase Authentication**: For secure user authentication.
@@ -144,7 +153,7 @@ You can follow them on Twitter at [@canopassoftware](https://x.com/canopassoftwa
 Copyright 2024 Canopas Software LLP
 
 Licensed under the Apache License, Version 2.0 (the "License");
-You won't be using this file except in compliance with the License.
+You may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
 http://www.apache.org/licenses/LICENSE-2.0

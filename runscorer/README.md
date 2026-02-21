@@ -1,14 +1,21 @@
-# khelo
+# Run Scorer (Khelo)
 
-The `khelo` module is the core UI component of the Khelo app. It contains the main Flutter application implementation and native integrations. This module handles the presentation layer and user interactions.
+This directory is the **Flutter app root** for Run Scorer (Khelo) — cricket scoring and team management. Run all Flutter commands from here (e.g. `flutter pub get`, `flutter run`).
 
-## Key Features
+It contains the main application, native integrations (Android/iOS), and the presentation layer. It depends on the workspace packages `style` and `data` (sibling directories at repo root).
 
-- **User Interface:** Provides the complete user interface for the Khelo app.
-- **Native Integration:** Includes native code for platform-specific functionalities.
-- **Navigation:** Manages app navigation and routing.
+## Structure
 
-### API
+- **lib/ui/** — Screens and app routing (GoRouter).
+- **lib/components/** — Reusable UI components.
+- **lib/domain/** — Formatters, extensions, and shared domain logic.
 
-- **UI:** Contains all UI components used in the app.
-- **Components:** Contains reusable components.
+## Development
+
+From the repo root:
+
+```bash
+cd runscorer
+flutter pub get
+flutter run
+```
