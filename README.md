@@ -1,21 +1,19 @@
-<p align="center"> <a href="https://canopas.com/contact"><img src="./cta/cta_banner.png" alt=""></a></p>
+# Run scorer - From Streets to Stadiums 🏏
 
-# Khelo - From Streets to Stadiums 🏏
 **Your Ultimate Companion for Cricket Management**
 
-<img src="./screenshots/cover_image.png"  alt=""/>
-
 ## Overview
-Welcome to Khelo, an open-source multi-platform app designed to cater to all your cricket needs, whether you're a cricket enthusiast, a team manager, or a player. With a wide array of features, our app simplifies the management of cricket teams, players, matches, and performance records. It's like having a personal assistant for your team!
 
-Khelo is built using Flutter and Dart, leveraging Firestore for database management and Firebase for authentication. This project employs Riverpod as its state management solution, adhering to a clean architecture approach. The repository is a monorepo: the main app is in `runscorer/`, with shared `style` and `data` packages at the root level.
+Welcome to Run scorer, an open-source multi-platform app designed to cater to all your cricket needs, whether you're a cricket enthusiast, a team manager, or a player. With a wide array of features, our app simplifies the management of cricket teams, players, matches, and performance records. It's like having a personal assistant for your team!
+
+Run scorer is built using Flutter and Dart, leveraging Firestore for database management and Firebase for authentication. This project employs Riverpod as its state management solution, adhering to a clean architecture approach. The repository is a monorepo: the main app is in `runscorer/`, with shared `style` and `data` packages at the root level.
 
 ## Download App
 
-<a href="https://play.google.com/store/apps/details?id=com.canopas.khelo"><img src="./cta/google_play.png" width="200"></a>
-<a href="https://apps.apple.com/us/app/khelo/id6480175424"><img src="./cta/app_store.png" width="200"></a>
+Coming Soon
 
 ## Screenshots
+
 <table>
   <tr>
     <th width="32%">Home Screen</th>
@@ -66,7 +64,7 @@ Khelo is built using Flutter and Dart, leveraging Firestore for database managem
 - **Toss Details**: Document toss results, including winning teams and choices, for improved match analysis.
 - **Tournament Management**: Organize and track cricket tournaments with ease, right from the app.
 
-> **Note**: Khelo is currently in active development 🚧, with plans to introduce additional features soon!
+> **Note**: Run scorer is currently in active development 🚧, with plans to introduce additional features soon!
 
 ## Getting Started 🏃
 
@@ -84,7 +82,7 @@ flutter run
 <summary> Click to expand </summary>
 <br>
 
-**Khelo** requires the following to function properly:
+**Run scorer** requires the following to function properly:
 
 **Software:**
 
@@ -114,7 +112,7 @@ flutter run
 
 ## Technologies Stack 📚
 
-Khelo leverages modern Flutter development technologies, adhering to industry best practices. Below is our current technology stack:
+Run scorer leverages modern Flutter development technologies, adhering to industry best practices. Below is our current technology stack:
 
 - **MVVM Architecture**: A design pattern that separates the user interface from business logic, enhancing testability.
 - **Flutter**: A UI toolkit for building natively compiled applications.
@@ -125,21 +123,19 @@ Khelo leverages modern Flutter development technologies, adhering to industry be
 - **Firebase Firestore**: A scalable database for storing app data.
 - **Cloud Functions**: To run backend code in response to events triggered by Firebase features.
 
-## Contribution 🤝
-The Canopas team enthusiastically welcomes contributions and project participation! There are a bunch of things you can do if you want to contribute! The [Contributor Guide](CONTRIBUTING.md) has all the information you need for everything from reporting bugs to contributing entire new features. Please don't hesitate to jump in if you'd like to, or even ask us questions if something isn't clear.
-
 ## What's Coming Next? 🚀
 
-- **Live Streaming**: Watch live matches directly through Khelo as we introduce live streaming, making it easier to follow your favorite teams and matches in real time.
+- **Live Streaming**: Watch live matches directly through Run scorer as we introduce live streaming, making it easier to follow your favorite teams and matches in real time.
 - **Voice-Over Scoring**: Get an immersive cricket experience with voice-over scoring, providing live commentary and score updates as the game unfolds.
 - **Improve User Experience**: We're continuously working on improving the user experience, with plans to incorporate additional features and enhancements shortly.
 
 ## Feedback & Suggestions ✨
 
-We welcome and appreciate any suggestions you may have for improvement. For bugs, questions, and discussions, please use the [GitHub Issues](https://github.com/canopas/khelo/issues).
+We welcome and appreciate any suggestions you may have for improvement. For bugs, questions, and discussions, please use the [GitHub Issues](https://github.com/canopas/Run scorer/issues).
 
 ## Credits 💻
-Khelo is owned and maintained by the [Canopas team](https://canopas.com/).
+
+Run scorer is owned and maintained by the [Canopas team](https://canopas.com/).
 
 You can follow them on Twitter at [@canopassoftware](https://x.com/canopassoftware) for project updates and releases. If you are interested in building apps or designing products, please let us know. We'd love to hear from you!
 
@@ -147,7 +143,7 @@ You can follow them on Twitter at [@canopassoftware](https://x.com/canopassoftwa
 
 ## Licence 📄
 
-**Khelo** is licensed under the Apache License, Version 2.0.
+**Run scorer** is licensed under the Apache License, Version 2.0.
 
 ```
 Copyright 2024 Canopas Software LLP
@@ -164,9 +160,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
-
-
-
-
-
