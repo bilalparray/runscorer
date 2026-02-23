@@ -1,8 +1,8 @@
 import 'package:data/api/user/user_models.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/flow/team/user_detail/component/user_detail_bowling_content.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/flow/team/user_detail/component/user_detail_bowling_content.dart';
 
 class UserDetailBattingContent extends ConsumerWidget {
   final int testMatchesCount;

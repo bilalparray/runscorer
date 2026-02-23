@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:data/api/ball_score/ball_score_model.dart';
 import 'package:flutter/material.dart';
-import 'package:khelo/components/custom_painters.dart';
+import 'package:runscorer/components/custom_painters.dart';
 import 'package:style/extensions/context_extensions.dart';
 
 class GroundLayoutView extends StatefulWidget {

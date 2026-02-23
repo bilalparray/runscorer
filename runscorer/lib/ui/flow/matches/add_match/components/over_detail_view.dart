@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:khelo/components/error_snackbar.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/matches/add_match/add_match_view_model.dart';
+import 'package:runscorer/components/error_snackbar.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/matches/add_match/add_match_view_model.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';

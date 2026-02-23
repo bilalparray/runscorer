@@ -47,22 +47,22 @@ final ThemeData materialThemeDataLight = _materialLightTheme.copyWith(
     backgroundColor: surfaceLightColor,
     headerForegroundColor: textPrimaryLightColor,
     dividerColor: outlineLightColor,
-    inputDecorationTheme:
-        _materialLightTheme.datePickerTheme.inputDecorationTheme?.copyWith(
-      errorBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: awarenessAlertColor)),
-    ),
+    inputDecorationTheme: _materialLightTheme.datePickerTheme.inputDecorationTheme
+            ?.copyWith(
+          errorBorder: const OutlineInputBorder(
+              borderSide: BorderSide(color: awarenessAlertColor)),
+        ) as InputDecorationTheme?,
   ),
   timePickerTheme: _materialLightTheme.timePickerTheme.copyWith(
     backgroundColor: surfaceLightColor,
     dialBackgroundColor: containerLowLightColor,
     dayPeriodColor: primaryLightColor,
     hourMinuteColor: containerLowLightColor,
-    inputDecorationTheme:
-        _materialLightTheme.timePickerTheme.inputDecorationTheme?.copyWith(
-      errorBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: awarenessAlertColor)),
-    ),
+    inputDecorationTheme: _materialLightTheme.timePickerTheme.inputDecorationTheme
+            ?.copyWith(
+          errorBorder: const OutlineInputBorder(
+              borderSide: BorderSide(color: awarenessAlertColor)),
+        ) as InputDecorationTheme?,
   ),
   colorScheme: _materialLightTheme.colorScheme.copyWith(
     primary: primaryLightColor,
@@ -90,22 +90,22 @@ final ThemeData materialThemeDataDark = _materialDarkTheme.copyWith(
     backgroundColor: surfaceDarkColor,
     headerForegroundColor: textPrimaryDarkColor,
     dividerColor: outlineDarkColor,
-    inputDecorationTheme:
-        _materialDarkTheme.datePickerTheme.inputDecorationTheme?.copyWith(
-      errorBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: awarenessAlertColor)),
-    ),
+    inputDecorationTheme: _materialDarkTheme.datePickerTheme.inputDecorationTheme
+            ?.copyWith(
+          errorBorder: const OutlineInputBorder(
+              borderSide: BorderSide(color: awarenessAlertColor)),
+        ) as InputDecorationTheme?,
   ),
   timePickerTheme: _materialDarkTheme.timePickerTheme.copyWith(
     backgroundColor: surfaceDarkColor,
     dialBackgroundColor: containerLowDarkColor,
     dayPeriodColor: primaryDarkColor,
     hourMinuteColor: containerLowDarkColor,
-    inputDecorationTheme:
-        _materialDarkTheme.timePickerTheme.inputDecorationTheme?.copyWith(
-      errorBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: awarenessAlertColor)),
-    ),
+    inputDecorationTheme: _materialDarkTheme.timePickerTheme.inputDecorationTheme
+            ?.copyWith(
+          errorBorder: const OutlineInputBorder(
+              borderSide: BorderSide(color: awarenessAlertColor)),
+        ) as InputDecorationTheme?,
   ),
   colorScheme: _materialDarkTheme.colorScheme.copyWith(
     primary: primaryDarkColor,

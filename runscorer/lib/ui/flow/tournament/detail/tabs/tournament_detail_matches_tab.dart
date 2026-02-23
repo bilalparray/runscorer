@@ -2,15 +2,15 @@ import 'package:data/api/team/team_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/components/match_detail_cell.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/tournament/detail/components/filter_tab_view.dart';
+import 'package:runscorer/components/match_detail_cell.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/tournament/detail/components/filter_tab_view.dart';
 import 'package:style/extensions/context_extensions.dart';
 
-import '../../../../../components/action_bottom_sheet.dart';
-import '../../../../../components/empty_screen.dart';
-import '../tournament_detail_view_model.dart';
+import 'package:runscorer/components/action_bottom_sheet.dart';
+import 'package:runscorer/components/empty_screen.dart';
+import 'package:runscorer/ui/flow/tournament/detail/tournament_detail_view_model.dart';
 
 class TournamentDetailMatchesTab extends ConsumerWidget {
   final Function(String) onMatchFilter;

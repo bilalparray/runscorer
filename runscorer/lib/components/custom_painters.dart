@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:data/api/ball_score/ball_score_model.dart';
 import 'dart:math';
 
-import 'package:khelo/domain/extensions/enum_extensions.dart';
+import 'package:runscorer/domain/extensions/enum_extensions.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 

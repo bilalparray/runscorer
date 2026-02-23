@@ -2,9 +2,9 @@ import 'package:collection/collection.dart';
 import 'package:data/api/ball_score/ball_score_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/enum_extensions.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/over_score_view.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/enum_extensions.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/over_score_view.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 

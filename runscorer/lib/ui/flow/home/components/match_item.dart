@@ -1,14 +1,14 @@
 import 'package:data/api/match/match_model.dart';
 import 'package:flutter/material.dart';
-import 'package:khelo/components/tournament_badge.dart';
-import 'package:khelo/domain/extensions/string_extensions.dart';
+import 'package:runscorer/components/tournament_badge.dart';
+import 'package:runscorer/domain/extensions/string_extensions.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../../components/image_avatar.dart';
-import '../../../../domain/formatter/date_formatter.dart';
-import '../../../app_route.dart';
+import 'package:runscorer/components/image_avatar.dart';
+import 'package:runscorer/domain/formatter/date_formatter.dart';
+import 'package:runscorer/ui/app_route.dart';
 
 class MatchItem extends StatelessWidget {
   final MatchModel match;

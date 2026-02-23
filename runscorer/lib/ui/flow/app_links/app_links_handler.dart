@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:app_links/app_links.dart';
 import 'package:flutter/widgets.dart';
 
-import '../../app_route.dart';
+import 'package:runscorer/ui/app_route.dart';
 
 const String _routePrefixTournament = 'tournament';
 const String _routePrefixMatch = 'match';

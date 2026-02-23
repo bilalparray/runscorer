@@ -10,7 +10,7 @@ import 'package:data/utils/constant/firebase_storage_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:khelo/domain/extensions/file_extension.dart';
+import 'package:runscorer/domain/extensions/file_extension.dart';
 
 part 'add_tournament_view_model.freezed.dart';
 

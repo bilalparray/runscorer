@@ -5,16 +5,16 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/components/app_page.dart';
-import 'package:khelo/components/confirmation_dialog.dart';
-import 'package:khelo/components/error_snackbar.dart';
-import 'package:khelo/components/image_picker_sheet.dart';
-import 'package:khelo/components/profile_image_avatar.dart';
-import 'package:khelo/components/user_detail_cell.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/widget_extension.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/team/add_team/add_team_view_model.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/components/confirmation_dialog.dart';
+import 'package:runscorer/components/error_snackbar.dart';
+import 'package:runscorer/components/image_picker_sheet.dart';
+import 'package:runscorer/components/profile_image_avatar.dart';
+import 'package:runscorer/components/user_detail_cell.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/widget_extension.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/team/add_team/add_team_view_model.dart';
 import 'package:style/button/primary_button.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/indicator/progress_indicator.dart';
@@ -26,8 +26,8 @@ import 'package:style/button/back_button.dart';
 import 'package:style/button/bottom_sticky_overlay.dart';
 import 'package:style/widgets/rounded_check_box.dart';
 
-import '../../../../gen/assets.gen.dart';
-import '../../matches/add_match/select_squad/components/user_detail_sheet.dart';
+import 'package:runscorer/gen/assets.gen.dart';
+import 'package:runscorer/ui/flow/matches/add_match/select_squad/components/user_detail_sheet.dart';
 
 class AddTeamScreen extends ConsumerStatefulWidget {
   final TeamModel? editTeam;

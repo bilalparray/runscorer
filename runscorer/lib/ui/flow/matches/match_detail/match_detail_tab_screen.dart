@@ -2,12 +2,12 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:khelo/components/app_page.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/string_extensions.dart';
-import 'package:khelo/domain/extensions/widget_extension.dart';
-import 'package:khelo/main.dart';
-import 'package:khelo/ui/flow/matches/match_detail/match_detail_tab_view_model.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/string_extensions.dart';
+import 'package:runscorer/domain/extensions/widget_extension.dart';
+import 'package:runscorer/main.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/match_detail_tab_view_model.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:style/button/action_button.dart';
 import 'package:style/button/tab_button.dart';

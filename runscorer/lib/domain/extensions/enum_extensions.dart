@@ -4,7 +4,7 @@ import 'package:data/api/match/match_model.dart';
 import 'package:data/api/tournament/tournament_model.dart';
 import 'package:data/api/user/user_models.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
 import 'package:style/extensions/context_extensions.dart';
 
 extension BallTypeString on BallType {

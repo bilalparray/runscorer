@@ -11,7 +11,7 @@ import 'package:data/utils/combine_latest.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
 
 part 'home_view_model.freezed.dart';
 

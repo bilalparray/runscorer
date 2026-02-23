@@ -15,8 +15,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:khelo/domain/extensions/file_extension.dart';
-import 'package:khelo/domain/extensions/string_extensions.dart';
+import 'package:runscorer/domain/extensions/file_extension.dart';
+import 'package:runscorer/domain/extensions/string_extensions.dart';
 
 part 'edit_profile_view_model.freezed.dart';
 

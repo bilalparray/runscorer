@@ -76,6 +76,8 @@ flutter pub get
 flutter run
 ```
 
+**Firebase:** The app uses Firebase (Auth, Firestore, Storage, Crashlytics, Messaging). For local development you need to add config files and run `flutterfire configure`. See **[Firebase setup guide](docs/FIREBASE_SETUP.md)** for step-by-step instructions.
+
 ## Requirements ✅
 
 <details>

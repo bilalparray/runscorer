@@ -1,6 +1,6 @@
 import 'package:data/api/ball_score/ball_score_model.dart';
 import 'package:flutter/material.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 

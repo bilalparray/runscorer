@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/components/action_bottom_sheet.dart';
-import 'package:khelo/components/app_page.dart';
-import 'package:khelo/components/empty_screen.dart';
-import 'package:khelo/components/error_screen.dart';
-import 'package:khelo/components/team_detail_cell.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/team/team_list_view_model.dart';
+import 'package:runscorer/components/action_bottom_sheet.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/components/empty_screen.dart';
+import 'package:runscorer/components/error_screen.dart';
+import 'package:runscorer/components/team_detail_cell.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/team/team_list_view_model.dart';
 import 'package:style/callback/on_visible_callback.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/indicator/progress_indicator.dart';
 
-import '../../../domain/extensions/widget_extension.dart';
-import '../../../gen/assets.gen.dart';
+import 'package:runscorer/domain/extensions/widget_extension.dart';
+import 'package:runscorer/gen/assets.gen.dart';
 
 class TeamListScreen extends ConsumerStatefulWidget {
   const TeamListScreen({super.key});

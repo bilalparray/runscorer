@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/components/app_page.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/flow/tournament/team_selection/component/verification_team_list_sheet.dart';
-import 'package:khelo/ui/flow/tournament/team_selection/team_selection_view_model.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/flow/tournament/team_selection/component/verification_team_list_sheet.dart';
+import 'package:runscorer/ui/flow/tournament/team_selection/team_selection_view_model.dart';
 import 'package:style/button/action_button.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/indicator/progress_indicator.dart';
@@ -14,14 +14,14 @@ import 'package:style/text/app_text_style.dart';
 import 'package:style/text/search_text_field.dart';
 import 'package:style/widgets/rounded_check_box.dart';
 
-import '../../../../components/create_team_cell.dart';
-import '../../../../components/error_screen.dart';
-import '../../../../components/error_snackbar.dart';
-import '../../../../domain/extensions/widget_extension.dart';
-import '../../../../gen/assets.gen.dart';
-import '../../../app_route.dart';
-import '../../team/scanner/scanner_view_model.dart';
-import '../../team/search_team/components/team_member_sheet.dart';
+import 'package:runscorer/components/create_team_cell.dart';
+import 'package:runscorer/components/error_screen.dart';
+import 'package:runscorer/components/error_snackbar.dart';
+import 'package:runscorer/domain/extensions/widget_extension.dart';
+import 'package:runscorer/gen/assets.gen.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/team/scanner/scanner_view_model.dart';
+import 'package:runscorer/ui/flow/team/search_team/components/team_member_sheet.dart';
 import 'component/team_profile_cell.dart';
 
 class TeamSelectionScreen extends ConsumerStatefulWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/components/app_page.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:style/button/action_button.dart';
 import 'package:style/extensions/context_extensions.dart';

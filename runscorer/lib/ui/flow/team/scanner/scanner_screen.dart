@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/widget_extension.dart';
-import 'package:khelo/gen/assets.gen.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/team/scanner/scanner_view_model.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/widget_extension.dart';
+import 'package:runscorer/gen/assets.gen.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/team/scanner/scanner_view_model.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:style/animations/on_tap_scale.dart';
@@ -19,8 +19,8 @@ import 'package:style/button/primary_button.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../../components/app_page.dart';
-import '../../../../components/error_snackbar.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/components/error_snackbar.dart';
 
 class ScannerScreen extends ConsumerStatefulWidget {
   final List<String> addedIds;

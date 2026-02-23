@@ -2,15 +2,15 @@ import 'package:data/api/team/team_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/flow/tournament/team_selection/component/team_profile_cell.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/flow/tournament/team_selection/component/team_profile_cell.dart';
 import 'package:style/button/bottom_sticky_overlay.dart';
 import 'package:style/button/primary_button.dart';
 import 'package:style/button/secondary_button.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../team/search_team/components/team_member_sheet.dart';
+import 'package:runscorer/ui/flow/team/search_team/components/team_member_sheet.dart';
 
 class VerificationTeamListSheet extends StatefulWidget {
   final List<TeamModel> verified;

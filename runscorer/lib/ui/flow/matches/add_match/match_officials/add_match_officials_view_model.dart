@@ -2,9 +2,9 @@ import 'package:data/api/user/user_models.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
 import 'package:data/extensions/list_extensions.dart';
-import 'package:khelo/gen/assets.gen.dart';
+import 'package:runscorer/gen/assets.gen.dart';
 
 part 'add_match_officials_view_model.freezed.dart';
 

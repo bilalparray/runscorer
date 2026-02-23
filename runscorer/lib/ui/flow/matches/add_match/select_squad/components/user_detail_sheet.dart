@@ -2,13 +2,13 @@ import 'package:data/api/user/user_models.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/components/image_avatar.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/formatter/date_formatter.dart';
-import 'package:khelo/domain/formatter/string_formatter.dart';
+import 'package:runscorer/components/image_avatar.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/formatter/date_formatter.dart';
+import 'package:runscorer/domain/formatter/string_formatter.dart';
 import 'package:style/button/primary_button.dart';
 import 'package:style/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/enum_extensions.dart';
+import 'package:runscorer/domain/extensions/enum_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
 class UserDetailSheet extends StatelessWidget {

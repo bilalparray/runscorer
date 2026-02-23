@@ -3,17 +3,17 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:data/api/tournament/tournament_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:khelo/domain/extensions/enum_extensions.dart';
-import 'package:khelo/domain/extensions/image_provider_extensions.dart';
-import 'package:khelo/ui/app_route.dart';
+import 'package:runscorer/domain/extensions/enum_extensions.dart';
+import 'package:runscorer/domain/extensions/image_provider_extensions.dart';
+import 'package:runscorer/ui/app_route.dart';
 import 'package:palette_generator/palette_generator.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../../components/match_status_tag.dart';
-import '../../../../domain/formatter/date_formatter.dart';
-import '../../../../gen/assets.gen.dart';
+import 'package:runscorer/components/match_status_tag.dart';
+import 'package:runscorer/domain/formatter/date_formatter.dart';
+import 'package:runscorer/gen/assets.gen.dart';
 
 class TournamentItem extends StatefulWidget {
   final TournamentModel tournament;

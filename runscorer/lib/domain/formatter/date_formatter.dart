@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:intl/intl.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
 import 'package:style/extensions/date_extensions.dart';
 
 enum DateFormatType {

@@ -1,7 +1,7 @@
 import 'package:data/api/team/team_model.dart';
 import 'package:flutter/material.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/string_extensions.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/string_extensions.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/button/more_option_button.dart';
 import 'package:style/extensions/context_extensions.dart';

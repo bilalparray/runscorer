@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/components/app_page.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/widget_extension.dart';
-import 'package:khelo/ui/flow/matches/add_match/power_play/power_play_view_model.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/widget_extension.dart';
+import 'package:runscorer/ui/flow/matches/add_match/power_play/power_play_view_model.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/button/back_button.dart';
 import 'package:style/button/bottom_sticky_overlay.dart';

@@ -5,21 +5,21 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/gen/assets.gen.dart';
-import 'package:khelo/ui/flow/app_links/app_links_handler.dart';
-import 'package:khelo/ui/flow/my_game/my_game_tab_screen.dart';
-import 'package:khelo/ui/flow/profile/profile_screen.dart';
-import 'package:khelo/ui/flow/stats/user_stat/user_stat_screen.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/gen/assets.gen.dart';
+import 'package:runscorer/ui/flow/app_links/app_links_handler.dart';
+import 'package:runscorer/ui/flow/my_game/my_game_tab_screen.dart';
+import 'package:runscorer/ui/flow/profile/profile_screen.dart';
+import 'package:runscorer/ui/flow/stats/user_stat/user_stat_screen.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/navigation/bottom_navigation_bar.dart';
 
-import '../../../domain/extensions/widget_extension.dart';
-import '../home/home_screen.dart';
-import '../notification/notification_permission_bottom_sheet.dart';
-import 'main_screen_state_notifier.dart';
-import 'notification_handler.dart';
+import 'package:runscorer/domain/extensions/widget_extension.dart';
+import 'package:runscorer/ui/flow/home/home_screen.dart';
+import 'package:runscorer/ui/flow/notification/notification_permission_bottom_sheet.dart';
+import 'package:runscorer/ui/flow/main/main_screen_state_notifier.dart';
+import 'package:runscorer/ui/flow/main/notification_handler.dart';
 
 class MainScreen extends ConsumerStatefulWidget {
   const MainScreen({super.key});

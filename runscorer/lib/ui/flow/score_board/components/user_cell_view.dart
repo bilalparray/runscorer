@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:khelo/components/image_avatar.dart';
-import 'package:khelo/gen/assets.gen.dart';
+import 'package:runscorer/components/image_avatar.dart';
+import 'package:runscorer/gen/assets.gen.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';

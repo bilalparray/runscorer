@@ -1,6 +1,6 @@
-# Run Scorer (Khelo)
+# Run Scorer (Run Scorer)
 
-This directory is the **Flutter app root** for Run Scorer (Khelo) — cricket scoring and team management. Run all Flutter commands from here (e.g. `flutter pub get`, `flutter run`).
+This directory is the **Flutter app root** for Run Scorer (Run Scorer) — cricket scoring and team management. Run all Flutter commands from here (e.g. `flutter pub get`, `flutter run`).
 
 It contains the main application, native integrations (Android/iOS), and the presentation layer. It depends on the workspace packages `style` and `data` (sibling directories at repo root).
 

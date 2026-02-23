@@ -7,8 +7,8 @@ import 'package:data/storage/app_preferences.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/flow/matches/add_match/match_officials/add_match_officials_view_model.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/flow/matches/add_match/match_officials/add_match_officials_view_model.dart';
 
 part 'add_match_view_model.freezed.dart';
 

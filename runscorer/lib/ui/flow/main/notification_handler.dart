@@ -7,7 +7,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../app_route.dart';
+import 'package:runscorer/ui/app_route.dart';
 
 const _androidChannel = AndroidNotificationChannel(
   "notification_khelo_channel",

@@ -3,14 +3,14 @@ import 'package:data/api/user/user_models.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/components/user_detail_cell.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/flow/team/add_team_member/components/verify_team_member_sheet.dart';
+import 'package:runscorer/components/user_detail_cell.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/flow/team/add_team_member/components/verify_team_member_sheet.dart';
 import 'package:style/button/secondary_button.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../matches/add_match/select_squad/components/user_detail_sheet.dart';
+import 'package:runscorer/ui/flow/matches/add_match/select_squad/components/user_detail_sheet.dart';
 
 class TeamMemberSheet extends StatelessWidget {
   static Future<T?> show<T>(

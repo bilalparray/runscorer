@@ -15,13 +15,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/match_detail_commentary_view.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/match_detail_highlight_view.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/match_detail_info_view.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/match_detail_overs_view.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/match_detail_scorecard_view.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/match_detail_squad_view.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/match_detail_commentary_view.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/match_detail_highlight_view.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/match_detail_info_view.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/match_detail_overs_view.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/match_detail_scorecard_view.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/match_detail_squad_view.dart';
 
 part 'match_detail_tab_view_model.freezed.dart';
 

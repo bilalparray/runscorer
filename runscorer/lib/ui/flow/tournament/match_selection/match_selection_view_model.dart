@@ -9,7 +9,7 @@ import 'package:data/service/tournament/tournament_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:khelo/ui/flow/tournament/match_selection/match_scheduler.dart';
+import 'package:runscorer/ui/flow/tournament/match_selection/match_scheduler.dart';
 
 part 'match_selection_view_model.freezed.dart';
 

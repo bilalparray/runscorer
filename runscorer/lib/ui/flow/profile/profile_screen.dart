@@ -2,14 +2,14 @@ import 'package:data/storage/app_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:khelo/components/app_page.dart';
-import 'package:khelo/components/confirmation_dialog.dart';
-import 'package:khelo/components/error_snackbar.dart';
-import 'package:khelo/components/image_avatar.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/profile/components/complete_profile_progress.dart';
-import 'package:khelo/ui/flow/profile/profile_view_model.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/components/confirmation_dialog.dart';
+import 'package:runscorer/components/error_snackbar.dart';
+import 'package:runscorer/components/image_avatar.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/profile/components/complete_profile_progress.dart';
+import 'package:runscorer/ui/flow/profile/profile_view_model.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:style/animations/on_tap_scale.dart';
@@ -18,7 +18,7 @@ import 'package:style/button/toggle_button.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../gen/assets.gen.dart';
+import 'package:runscorer/gen/assets.gen.dart';
 
 class ProfileScreen extends ConsumerStatefulWidget {
   final VoidCallback changeTabToMyCricket;

@@ -2,15 +2,15 @@ import 'package:data/api/match/match_model.dart';
 import 'package:data/api/team/team_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:khelo/components/empty_screen.dart';
-import 'package:khelo/components/match_detail_cell.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/team/detail/team_detail_view_model.dart';
+import 'package:runscorer/components/empty_screen.dart';
+import 'package:runscorer/components/match_detail_cell.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/team/detail/team_detail_view_model.dart';
 import 'package:style/callback/on_visible_callback.dart';
 import 'package:style/indicator/progress_indicator.dart';
 
-import '../../../../../domain/extensions/widget_extension.dart';
+import 'package:runscorer/domain/extensions/widget_extension.dart';
 
 class TeamDetailMatchContent extends ConsumerWidget {
   const TeamDetailMatchContent({super.key});

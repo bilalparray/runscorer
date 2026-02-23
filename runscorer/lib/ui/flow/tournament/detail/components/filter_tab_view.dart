@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../../../gen/assets.gen.dart';
+import 'package:runscorer/gen/assets.gen.dart';
 
 class FilterTabView extends StatelessWidget {
   final String title;

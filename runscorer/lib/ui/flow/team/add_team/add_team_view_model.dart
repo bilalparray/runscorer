@@ -12,7 +12,7 @@ import 'package:data/utils/constant/firebase_storage_constant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:khelo/domain/extensions/file_extension.dart';
+import 'package:runscorer/domain/extensions/file_extension.dart';
 
 part 'add_team_view_model.freezed.dart';
 

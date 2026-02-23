@@ -1,6 +1,6 @@
 import 'package:data/api/match/match_model.dart';
 import 'package:flutter/material.dart';
-import 'package:khelo/domain/extensions/enum_extensions.dart';
+import 'package:runscorer/domain/extensions/enum_extensions.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 

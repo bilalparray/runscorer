@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/enum_extensions.dart';
-import 'package:khelo/ui/flow/matches/add_match/add_match_view_model.dart';
-import 'package:khelo/ui/flow/matches/add_match/components/section_title.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/enum_extensions.dart';
+import 'package:runscorer/ui/flow/matches/add_match/add_match_view_model.dart';
+import 'package:runscorer/ui/flow/matches/add_match/components/section_title.dart';
 import 'package:style/button/chip_button.dart';
 import 'package:data/api/match/match_model.dart';
 

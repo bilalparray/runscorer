@@ -5,18 +5,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/enum_extensions.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/enum_extensions.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/button/chip_button.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../../../components/empty_screen.dart';
-import '../../../../../components/image_avatar.dart';
-import '../../../../app_route.dart';
-import '../components/filter_tab_view.dart';
-import '../tournament_detail_view_model.dart';
+import 'package:runscorer/components/empty_screen.dart';
+import 'package:runscorer/components/image_avatar.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/tournament/detail/components/filter_tab_view.dart';
+import 'package:runscorer/ui/flow/tournament/detail/tournament_detail_view_model.dart';
 
 class TournamentDetailStatsTab extends ConsumerWidget {
   final Function(KeyStatFilterTag) onFiltered;

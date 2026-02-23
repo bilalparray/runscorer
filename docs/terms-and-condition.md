@@ -2,7 +2,7 @@
 
 **Effective Date: June 20, 2024**
 
-These Terms & Conditions govern your use of the Khelo mobile app, developed by Canopas Software LLP. By downloading and using the App, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not use the App.
+These Terms & Conditions govern your use of the Run Scorer mobile app, developed by Canopas Software LLP. By downloading and using the App, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not use the App.
 
 #### 1. License to Use
 
@@ -15,7 +15,7 @@ Canopas grants you a non-exclusive, revocable license to use the App in accordan
 
 #### 2. User Content
 
-You are responsible for all content you upload, store, or transmit through the Khelo App. You retain all ownership rights to your User Content. However, by uploading User Content, you grant Canopas a non-exclusive, royalty-free license to use, reproduce, modify, publish, distribute, and translate your User Content in connection with the App and its related services.
+You are responsible for all content you upload, store, or transmit through the Run Scorer App. You retain all ownership rights to your User Content. However, by uploading User Content, you grant Canopas a non-exclusive, royalty-free license to use, reproduce, modify, publish, distribute, and translate your User Content in connection with the App and its related services.
 
 #### 3. Third-Party Services
 
@@ -41,7 +41,7 @@ These Terms constitute the entire agreement between you and Canopas regarding yo
 
 These Terms and Conditions will be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions.
 
-This clarifies that Indian law applies to any disputes arising from the use of the Khelo app developed by Canopas Software LLP.
+This clarifies that Indian law applies to any disputes arising from the use of the Run Scorer app developed by Canopas Software LLP.
 
 #### 9. Changes to the Terms
 
@@ -51,5 +51,5 @@ Canopas may revise these Terms at any time by posting the revised Terms on the A
 
 If you have any questions about these Terms, please contact us at:
 
-* Email: [contact@canopas.com](mailto:contact@canopas.com)
-* Website: [Canopas Software LLP](https://www.canopas.com/)
+- Email: [contact@canopas.com](mailto:contact@canopas.com)
+- Website: [Canopas Software LLP](https://www.canopas.com/)

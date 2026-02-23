@@ -1,6 +1,6 @@
 import 'package:data/errors/app_error_l10n_codes.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
 import 'package:data/errors/app_error.dart';
 
 extension AppErrorExtensions on Object {

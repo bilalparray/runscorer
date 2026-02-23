@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:khelo/components/app_page.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/gen/assets.gen.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/gen/assets.gen.dart';
 import 'package:style/button/bottom_sticky_overlay.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 import 'package:style/button/primary_button.dart';
 
-import '../../app_route.dart';
+import 'package:runscorer/ui/app_route.dart';
 
 class IntroScreen extends ConsumerStatefulWidget {
   const IntroScreen({super.key});

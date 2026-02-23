@@ -1,11 +1,11 @@
 import 'package:data/api/match/match_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:khelo/components/image_avatar.dart';
-import 'package:khelo/components/match_status_tag.dart';
-import 'package:khelo/domain/extensions/string_extensions.dart';
-import 'package:khelo/ui/flow/matches/match_detail/match_detail_tab_view_model.dart';
-import 'package:khelo/components/won_by_message_text.dart';
+import 'package:runscorer/components/image_avatar.dart';
+import 'package:runscorer/components/match_status_tag.dart';
+import 'package:runscorer/domain/extensions/string_extensions.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/match_detail_tab_view_model.dart';
+import 'package:runscorer/components/won_by_message_text.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 

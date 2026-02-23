@@ -3,19 +3,19 @@ import 'package:data/api/team/team_model.dart';
 import 'package:data/api/tournament/tournament_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:khelo/components/won_by_message_text.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/enum_extensions.dart';
-import 'package:khelo/domain/extensions/string_extensions.dart';
-import 'package:khelo/domain/formatter/date_formatter.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/tournament/detail/components/match_group_tag.dart';
+import 'package:runscorer/components/won_by_message_text.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/enum_extensions.dart';
+import 'package:runscorer/domain/extensions/string_extensions.dart';
+import 'package:runscorer/domain/formatter/date_formatter.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/tournament/detail/components/match_group_tag.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../../../components/image_avatar.dart';
-import '../tournament_detail_view_model.dart';
+import 'package:runscorer/components/image_avatar.dart';
+import 'package:runscorer/ui/flow/tournament/detail/tournament_detail_view_model.dart';
 
 class TournamentDetailOverviewTab extends ConsumerWidget {
   final PageController controller;

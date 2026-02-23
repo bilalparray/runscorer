@@ -2,16 +2,16 @@ import 'package:collection/collection.dart';
 import 'package:data/api/ball_score/ball_score_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:khelo/components/error_screen.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/final_score_view.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/over_score_view.dart';
-import 'package:khelo/ui/flow/matches/match_detail/match_detail_tab_view_model.dart';
+import 'package:runscorer/components/error_screen.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/final_score_view.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/over_score_view.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/match_detail_tab_view_model.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/indicator/progress_indicator.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../../../components/empty_screen.dart';
+import 'package:runscorer/components/empty_screen.dart';
 
 class MatchDetailOversView extends ConsumerWidget {
   const MatchDetailOversView({super.key});

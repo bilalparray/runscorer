@@ -1,12 +1,12 @@
 import 'package:data/api/leaderboard/leaderboard_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:khelo/components/app_page.dart';
-import 'package:khelo/components/image_avatar.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/enum_extensions.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/leaderboard/leaderboard_view_model.dart';
+import 'package:runscorer/components/app_page.dart';
+import 'package:runscorer/components/image_avatar.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/enum_extensions.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/leaderboard/leaderboard_view_model.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/button/tab_button.dart';
 import 'package:style/callback/on_visible_callback.dart';
@@ -14,9 +14,9 @@ import 'package:style/extensions/context_extensions.dart';
 import 'package:style/indicator/progress_indicator.dart';
 import 'package:style/text/app_text_style.dart';
 
-import '../../../components/empty_screen.dart';
-import '../../../components/error_screen.dart';
-import '../../../domain/extensions/widget_extension.dart';
+import 'package:runscorer/components/empty_screen.dart';
+import 'package:runscorer/components/error_screen.dart';
+import 'package:runscorer/domain/extensions/widget_extension.dart';
 
 class LeaderboardScreen extends ConsumerStatefulWidget {
   final LeaderboardField selectedField;

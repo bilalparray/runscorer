@@ -1,11 +1,11 @@
 import 'package:data/api/ball_score/ball_score_model.dart';
 import 'package:data/api/team/team_model.dart';
 import 'package:flutter/material.dart';
-import 'package:khelo/components/image_avatar.dart';
-import 'package:khelo/domain/extensions/context_extensions.dart';
-import 'package:khelo/domain/extensions/string_extensions.dart';
-import 'package:khelo/ui/app_route.dart';
-import 'package:khelo/ui/flow/matches/match_detail/components/over_score_view.dart';
+import 'package:runscorer/components/image_avatar.dart';
+import 'package:runscorer/domain/extensions/context_extensions.dart';
+import 'package:runscorer/domain/extensions/string_extensions.dart';
+import 'package:runscorer/ui/app_route.dart';
+import 'package:runscorer/ui/flow/matches/match_detail/components/over_score_view.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/extensions/context_extensions.dart';
 import 'package:style/text/app_text_style.dart';
