@@ -115,6 +115,93 @@ Enable the services the app uses so they don’t throw errors at runtime.
 3. Choose **Start in test mode** for development (or **Production** and then set rules).
 4. Pick a location close to your users and confirm.
 
+**Important:** If you started in **test mode**, the default rules allow read/write for 30 days. If you used production mode or the test period expired, you must set rules. Otherwise you will see **PERMISSION_DENIED** when the app reads/writes (e.g. after phone sign-in when loading the user document).
+
+**Rules for Run Scorer (development):** The same rules are in **`runscorer/firestore.rules`**. Deploy them with the Firebase CLI (see below) or paste the block into **Firestore Database** → **Rules** in the Firebase Console and click Publish. They allow any **authenticated** user to read and write the collections the app uses (users, matches, tournaments, teams, leaderboard, etc.).
+
+```text
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow create, update, delete: if request.auth.uid == userId;
+      match /user_sessions/{sessionId} {
+        allow read, write: if request.auth.uid == userId;
+      }
+      match /user_stat/{statId} {
+        allow read, write: if request.auth.uid == userId;
+      }
+    }
+    match /matches/{matchId} {
+      allow read, write: if request.auth != null;
+      match /match_settings/{docId} {
+        allow read, write: if request.auth != null;
+      }
+    }
+    match /tournaments/{tournamentId} {
+      allow read, write: if request.auth != null;
+      match /team_stats/{docId} {
+        allow read, write: if request.auth != null;
+      }
+      match /player_key_stats/{docId} {
+        allow read, write: if request.auth != null;
+      }
+    }
+    match /teams/{teamId} {
+      allow read, write: if request.auth != null;
+      match /team_stat/{docId} {
+        allow read, write: if request.auth != null;
+      }
+    }
+    match /leaderboard/{typeDoc} {
+      allow read, write: if request.auth != null;
+      match /data/{docId} {
+        allow read, write: if request.auth != null;
+      }
+    }
+    match /innings/{inningId} {
+      allow read, write: if request.auth != null;
+    }
+    match /ball_scores/{scoreId} {
+      allow read, write: if request.auth != null;
+    }
+    match /match_events/{eventId} {
+      allow read, write: if request.auth != null;
+    }
+    match /partnerships/{docId} {
+      allow read, write: if request.auth != null;
+    }
+    match /contact_support/{docId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+```
+
+**Before production:** Tighten rules (e.g. only match creator can update/delete a match, only team members can read a team).
+
+**Deploy rules from the repo (recommended):** The project includes `runscorer/firestore.rules` and `runscorer/firebase.json`. To deploy rules from the CLI:
+
+1. Install [Firebase CLI](https://firebase.google.com/docs/cli) and run `firebase login`.
+2. From the app directory, select your project (if not already set):
+   ```bash
+   cd runscorer
+   firebase use <your-firebase-project-id>
+   ```
+   Or run `flutterfire configure` once; it sets the project in `.firebaserc`.
+3. Deploy Firestore rules and indexes:
+   ```bash
+   firebase deploy --only firestore
+   ```
+   Or deploy only rules or only indexes:
+   ```bash
+   firebase deploy --only firestore:rules
+   firebase deploy --only firestore:indexes
+   ```
+
+Edit `firestore.rules` and `firestore.indexes.json` locally, then run the deploy command to push changes. **Indexes** can take a few minutes to build in the Firebase Console after deployment; the app may show "The query requires an index" until they are ready.
+
 Later, tighten security rules before production.
 
 ### Storage
