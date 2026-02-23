@@ -877,6 +877,18 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get add_team_member_add_by_phone_title => 'Add by phone';
+
+  @override
+  String get add_team_member_add_by_phone_btn => 'Add by phone';
+
+  @override
+  String get add_team_member_phone_hint => 'Phone number';
+
+  @override
+  String get add_team_member_name_hint => 'Name';
+
+  @override
   String get team_list_add_members_title => 'Add Members';
 
   @override

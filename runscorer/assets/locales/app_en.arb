@@ -361,6 +361,10 @@
       }
     }
   },
+  "add_team_member_add_by_phone_title": "Add by phone",
+  "add_team_member_add_by_phone_btn": "Add by phone",
+  "add_team_member_phone_hint": "Phone number",
+  "add_team_member_name_hint": "Name",
 
   "team_list_add_members_title": "Add Members",
   "team_list_all_teams_title": "All teams",

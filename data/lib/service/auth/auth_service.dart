@@ -8,6 +8,7 @@ import '../../errors/app_error.dart';
 import '../../extensions/string_extensions.dart';
 import '../../storage/app_preferences.dart';
 import '../../storage/provider/preferences_provider.dart';
+import '../team/team_service.dart';
 import '../user/user_service.dart';
 
 final firebaseAuthProvider = Provider((ref) => FirebaseAuth.instance);
@@ -16,6 +17,7 @@ final authServiceProvider = Provider((ref) {
   return AuthService(
     ref.read(firebaseAuthProvider),
     ref.read(userServiceProvider),
+    ref.read(teamServiceProvider),
     ref.read(currentUserJsonPod.notifier),
     ref.read(currentUserSessionJsonPod.notifier),
   );
@@ -24,6 +26,7 @@ final authServiceProvider = Provider((ref) {
 class AuthService {
   final FirebaseAuth _auth;
   final UserService _userService;
+  final TeamService _teamService;
 
   final PreferenceNotifier<String?> _currentUserNotifier;
   final PreferenceNotifier<String?> _userSessionNotifier;
@@ -31,6 +34,7 @@ class AuthService {
   AuthService(
     this._auth,
     this._userService,
+    this._teamService,
     this._currentUserNotifier,
     this._userSessionNotifier,
   ) {
@@ -116,9 +120,22 @@ class AuthService {
         return;
       }
       final phone = "$countryCode ${phoneNumber.caseAndSpaceInsensitive}";
+      final uid = credential.user!.uid;
+
+      // If they were added to a team by phone+name (pending user), migrate to auth UID
+      final pendingUser = await _userService.getUserByPhone(phone);
+      if (pendingUser != null &&
+          UserService.isPendingUserId(pendingUser.id)) {
+        await _userService.createUserFromPending(
+          pendingUser: pendingUser,
+          authUid: uid,
+        );
+        await _teamService.replacePlayerIdInTeams(pendingUser.id, uid);
+        await _userService.deleteUserById(pendingUser.id);
+      }
 
       final (user, session) = await _userService.upsertUser(
-        uid: credential.user!.uid,
+        uid: uid,
         phone: phone,
       );
 

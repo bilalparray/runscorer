@@ -1583,6 +1583,30 @@ abstract class AppLocalizations {
   /// **'Enter the last {count} digits of the phone number of the selected player.'**
   String add_team_member_verify_placeholder_text(int count);
 
+  /// No description provided for @add_team_member_add_by_phone_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Add by phone'**
+  String get add_team_member_add_by_phone_title;
+
+  /// No description provided for @add_team_member_add_by_phone_btn.
+  ///
+  /// In en, this message translates to:
+  /// **'Add by phone'**
+  String get add_team_member_add_by_phone_btn;
+
+  /// No description provided for @add_team_member_phone_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get add_team_member_phone_hint;
+
+  /// No description provided for @add_team_member_name_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get add_team_member_name_hint;
+
   /// No description provided for @team_list_add_members_title.
   ///
   /// In en, this message translates to:

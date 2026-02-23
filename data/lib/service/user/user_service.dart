@@ -79,6 +79,17 @@ class UserService {
     return session;
   }
 
+  /// Prefix for user docs created when adding by phone+name (no signup yet).
+  static const String pendingUserIdPrefix = 'phone_';
+
+  static String _pendingUserId(String phone) {
+    final normalized = phone.replaceAll(RegExp(r'[\s+]'), '');
+    return '$pendingUserIdPrefix$normalized';
+  }
+
+  static bool isPendingUserId(String id) =>
+      id.startsWith(pendingUserIdPrefix);
+
   Future<(UserModel, ApiSession)> upsertUser({
     required String uid,
     required String phone,
@@ -87,6 +98,73 @@ class UserService {
     user ??= await _createUser(uid, phone);
     final session = await _createSession(uid);
     return (user, session);
+  }
+
+  Future<UserModel?> getUserByPhone(String phone) async {
+    try {
+      final snapshot = await _userRef
+          .where(FireStoreConst.phone, isEqualTo: phone)
+          .limit(1)
+          .get();
+      if (snapshot.docs.isEmpty) return null;
+      return snapshot.docs.first.data();
+    } catch (error, stack) {
+      throw AppError.fromError(error, stack);
+    }
+  }
+
+  /// Creates or returns a user profile for someone added by phone+name
+  /// without signup. Doc id is [pendingUserIdPrefix]+normalized phone.
+  /// When they later sign in with that phone, [upsertUser] migrates to auth UID.
+  Future<UserModel> createOrGetPendingUser({
+    required String phone,
+    required String name,
+  }) async {
+    final id = _pendingUserId(phone);
+    final existing = await getUser(id);
+    if (existing != null) {
+      if (existing.name != name) {
+        final updated = existing.copyWith(
+          name: name,
+          name_lowercase: name.toLowerCase(),
+          updated_at: DateTime.now(),
+        );
+        await updateUser(updated);
+        return updated;
+      }
+      return existing;
+    }
+    final user = UserModel(
+      id: id,
+      phone: phone,
+      name: name,
+      name_lowercase: name.toLowerCase(),
+      created_at: DateTime.now(),
+    );
+    await _userRef.doc(id).set(user);
+    return user;
+  }
+
+  /// Creates a real user doc from a pending user (after auth). Call from auth
+  /// flow before replacing pending id in teams and deleting pending doc.
+  Future<UserModel> createUserFromPending({
+    required UserModel pendingUser,
+    required String authUid,
+  }) async {
+    final newUser = pendingUser.copyWith(
+      id: authUid,
+      updated_at: DateTime.now(),
+    );
+    await _userRef.doc(authUid).set(newUser);
+    return newUser;
+  }
+
+  Future<void> deleteUserById(String userId) async {
+    try {
+      await _userRef.doc(userId).delete();
+    } catch (error, stack) {
+      throw AppError.fromError(error, stack);
+    }
   }
 
   Future<UserModel?> getUser(String id) async {

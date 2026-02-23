@@ -2,9 +2,11 @@ import 'dart:async';
 
 import 'package:data/api/team/team_model.dart';
 import 'package:data/api/user/user_models.dart';
+import 'package:data/extensions/string_extensions.dart';
 import 'package:data/service/team/team_service.dart';
 import 'package:data/service/user/user_service.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -69,6 +71,30 @@ class AddTeamMemberViewNotifier extends StateNotifier<AddTeamMemberState> {
     final updatedList = state.selectedUsers.toList();
     updatedList.removeWhere((element) => element.id == user.id);
     state = state.copyWith(selectedUsers: updatedList);
+  }
+
+  /// Adds a member by phone + name (no signup). Creates a pending user and
+  /// adds them to the selection. When they later sign in with that phone,
+  /// their profile is migrated to their auth UID.
+  Future<void> addMemberByPhone({
+    required String countryDialCode,
+    required String phoneNumber,
+    required String name,
+  }) async {
+    state = state.copyWith(actionError: null);
+    try {
+      final phone =
+          '$countryDialCode ${phoneNumber.caseAndSpaceInsensitive}';
+      final user = await _userService.createOrGetPendingUser(
+        phone: phone,
+        name: name.trim(),
+      );
+      selectUser(user);
+    } catch (e) {
+      state = state.copyWith(actionError: e);
+      debugPrint(
+          "AddTeamMemberViewNotifier: error adding member by phone -> $e");
+    }
   }
 
   Future<void> addPlayersToTeam() async {

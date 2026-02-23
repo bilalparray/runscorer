@@ -312,6 +312,33 @@ class TeamService {
     }
   }
 
+  /// Replaces a player id in all teams that contain them (e.g. when a pending
+  /// phone_xxx user signs in and gets a real auth UID).
+  Future<void> replacePlayerIdInTeams(String oldPlayerId, String newPlayerId) async {
+    try {
+      final playerVariants = [
+        TeamPlayer(id: oldPlayerId, role: TeamPlayerRole.admin).toJson(),
+        TeamPlayer(id: oldPlayerId, role: TeamPlayerRole.player).toJson(),
+      ];
+      final snapshot = await _teamsCollection
+          .where(FireStoreConst.teamPlayers, arrayContainsAny: playerVariants)
+          .get();
+      for (final doc in snapshot.docs) {
+        final team = doc.data();
+        final newPlayers = team.players
+            .map((p) => p.id == oldPlayerId ? p.copyWith(id: newPlayerId) : p)
+            .toList();
+        await editPlayersToTeam(
+          doc.id,
+          team.created_by ?? '',
+          newPlayers,
+        );
+      }
+    } catch (error, stack) {
+      throw AppError.fromError(error, stack);
+    }
+  }
+
   Future<List<TeamModel>> getTeamsByIds(List<String> teamIds) async {
     try {
       return await _teamsCollection

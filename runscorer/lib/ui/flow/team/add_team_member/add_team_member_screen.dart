@@ -15,6 +15,7 @@ import 'package:runscorer/domain/extensions/widget_extension.dart';
 import 'package:runscorer/ui/app_route.dart';
 import 'package:runscorer/ui/flow/matches/add_match/select_squad/components/user_detail_sheet.dart';
 import 'package:runscorer/ui/flow/team/add_team_member/add_team_member_view_model.dart';
+import 'package:runscorer/ui/flow/team/add_team_member/components/add_member_by_phone_sheet.dart';
 import 'package:runscorer/ui/flow/team/add_team_member/components/verify_team_member_sheet.dart';
 import 'package:style/animations/on_tap_scale.dart';
 import 'package:style/button/action_button.dart';
@@ -110,6 +111,21 @@ class _AddTeamMemberScreenState extends ConsumerState<AddTeamMemberScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _searchField(context, state),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: SecondaryButton(
+              context.l10n.add_team_member_add_by_phone_btn,
+              onPressed: () => AddMemberByPhoneSheet.show(
+                context,
+                onAdd: ({required countryDialCode, required phoneNumber, required name}) =>
+                    notifier.addMemberByPhone(
+                  countryDialCode: countryDialCode,
+                  phoneNumber: phoneNumber,
+                  name: name,
+                ),
+              ),
+            ),
+          ),
           if (state.selectedUsers.isNotEmpty) ...[
             _selectedPlayerList(context, state),
           ],
